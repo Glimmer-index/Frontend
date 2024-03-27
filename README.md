@@ -10,7 +10,7 @@
 #### search  >  职位搜索页
 #### search-comp  >  公司搜索页
 ### 企业端（布局已完成，待补充部分逻辑）
-#### boss_user > 人才推荐页
-#### boss_chat > 人才推荐页
-#### boss_reco > 个人信息页
+#### boss_user > 个人信息页
+#### boss_chat > 收藏交流页
+#### boss_reco > 人才推荐页
 #### boss_upload > 上传招聘页
