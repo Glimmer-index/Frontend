@@ -1,0 +1,315 @@
+a,
+b,
+body,
+button,
+dd,
+div,
+dl,
+em,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+input,
+label,
+li,
+nav,
+p,
+select,
+span,
+td,
+textarea,
+u,
+ul {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none
+}
+
+li,
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:active,
+a:focus,
+a:hover,
+button,
+input,
+textarea {
+    outline: 0
+}
+
+a:hover {
+    color: #00d7c6;
+    text-decoration: none;
+    -webkit-transition: all linear .2s;
+    transition: all linear .2s
+}
+
+img {
+    border: none
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?8mntfy');
+    src: url('../fonts/icomoon.eot?8mntfy#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?8mntfy') format('truetype'),
+        url('../fonts/icomoon.woff?8mntfy') format('woff'),
+        url('../fonts/icomoon.svg?8mntfy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    overflow: hidden;
+}
+
+html {
+    background: #f0f2f5;
+}
+
+.left {
+    float: left;
+    width: 150px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #003354, #008f68);
+    color: white;
+}
+
+.nav {
+    margin-top: 40px;
+    padding: 0;
+}
+
+.nav li {
+    height: 60px;
+    line-height: 60px;
+    list-style: none;
+    text-align: center;
+    background-color: transparent;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.nav li:hover {
+    background-color: #025b5e;
+    color: #00ffcc;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.nav li.active {
+    color: #00ffcc;
+    background-color: #025b5e;
+    transform: scale(1.05);
+}
+
+.right {
+    float: left;
+    margin-left: 30px;
+    width: calc(100% - 250px);
+    height: 100vh;
+    padding: 100px 70px 70px 70px;
+    box-sizing: border-box;
+    background: #f0f2f5;
+
+}
+
+.boss_info {
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.boss_info::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.form_left {
+    float: left;
+    width: 600px;
+    position: relative;
+}
+
+.form_right {
+    margin-left: 40px;
+    float: left;
+    width: 600px;
+}
+
+.boss_info h3 {
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.boss_info div {
+    margin-bottom: 15px;
+}
+
+.boss_info_title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #888;
+}
+
+.boss_info input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.boss_info .boss_name .boss_name_input {
+    width: 50%;
+}
+
+.boss_sex_button {
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f0f0f5;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#male {
+    margin-right: 20px;
+}
+
+.boss_sex_button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.boss_img {
+    position: absolute;
+    top: 30px;
+    right: 130px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.boss_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+}
+
+.boss_img:hover .overlay {
+    opacity: 1;
+}
+
+.boss_img:hover {
+    cursor: pointer;
+}
+
+.boss_btn {
+    margin-top: 40px;
+    padding-top: 20px;
+    width: 80%;
+    text-align: right;
+}
+
+.form_btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.cancel_btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.confirm_btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.form_btn:hover {
+    opacity: 0.8;
+}
+
+
+.boss_comp,
+.boss_comp_ex {
+    margin-bottom: 20px;
+}
+
+.comp_ex {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.comp_ex {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #666;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.comp_ex:hover {
+    border-color: #999;
+}
