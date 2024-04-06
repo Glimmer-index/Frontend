@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/resu.css">
+</head>
+
+<body>
+
+
+
+    <div class="header">
+        <div class="shortcut">
+            <div class="w">
+                <div class="shortcut-left">
+                    <div class="logo">
+                        <a href="myindex.html">
+                            <img src="images/logo1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="myindex.html">首页</a></li>
+                            <li><a href="reco.html">推荐</a></li>
+                            <li><a href="search.html">搜索-职位</a></li>
+                            <li><a href="search_comp.html">搜索-公司</a></li>
+                            <li><a href="">APP</a></li>
+                            <li><a href="">咨询</a></li>
+                            <li><a href="">海外</a></li>
+                            <li><a href="">无障碍专区</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shortcut-right">
+
+                    <div class="login">
+                        <a href="user.html"><img src="images/1.jpg" alt="">张鹏程</a>
+                    </div>
+
+                    <div class="chat">
+                        消息
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="w">
+            <div class="left">
+                <h4>简历目录</h4>
+                <ul>
+                    <li>个人信息</li>
+                    <li>个人优势</li>
+                    <li>期望职位</li>
+                    <li>工作/实习经历</li>
+                    <li>项目经历</li>
+                    <li>教育经历</li>
+                </ul>
+                <div class="line"></div>
+                <div class="my">
+                    自定义添加
+                </div>
+            </div>
+
+            <div class="mid">
+                <div class="mid_info">
+                    <div class="info_title">个人信息</div>
+
+                    <div class="info_cont">
+                        <div class="info_left">
+                            <div class="info_name">张鹏程</div>
+                            <div class="info_tag">
+                                <ul>
+                                    <li><span> </span><span id="infoSex">男</span></li>
+                                    <li><span> </span><span id="infoBirth">22岁</span></li>
+                                    <li><span> </span><span id="infoState">在校-考虑机会</span></li>
+                                    <li><span> </span><span id="infoPay">3000以上</span></li>
+                                </ul>
+                            </div>
+                            <div class="info_tel">
+                                <span> </span><span id="infoTel">13833141821</span>
+                            </div>
+                            <div class="info_wechat" style="display:none;">
+                                <span> </span><span>微信号占位</span>
+                            </div>
+                            <div class="info_mail" style="display:none;">
+                                <span> </span><span>邮箱地址占位</span>
+                            </div>
+
+
+                            <div class="info_change">
+                                <span> </span>编辑
+                            </div>
+
+                        </div>
+                        <div class="info_right">
+                            <div class="info_img" id="info_img">
+                                <img src="" alt="">
+                                <div class="overlay" id="overlay">
+                                    修改
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mid_info_ex">
+                        <div class="info_ex_title">编辑个人信息</div>
+                        <form action="">
+                            <div class="info_ex_name">
+                                <div>姓名</div>
+                                <input type="text" name="name">
+                            </div>
+                            <div class="info_ex_state">
+                                <div>当前求职状态</div>
+                                <select name="state">
+                                    <option value="在校-暂不考虑">在校-暂不考虑</option>
+                                    <option value="在校-考虑机会">在校-考虑机会</option>
+                                    <option value="应届-迫切考虑">应届-迫切考虑</option>
+                                    <option value="在职-考虑机会">在职-考虑机会</option>
+                                    <option value="在职-暂不考虑">在职-暂不考虑</option>
+                                    <option value="离职-迫切考虑">离职-迫切考虑</option>
+                                </select>
+                            </div>
+                            <div class="info_ex_sex">
+                                <div>性别</div>
+                                <label class="man">
+                                    <input type="radio" name="sex" value="man" checked> 男
+                                </label>
+                                <label>
+                                    <input type="radio" name="sex" value="woman"> 女
+                                </label>
+                            </div>
+                            <div class="info_ex_tel">
+                                <div>电话</div>
+                                <input type="text" name="tel">
+                            </div>
+                            <div class="info_ex_birth">
+                                <div>出生年月</div>
+                                <input type="month" name="birth">
+                            </div>
+                            <div class="info_ex_pay">
+                                <div>期望薪资</div>
+                                <select name="pay">
+                                    <option value="3000以下">3000以下</option>
+                                    <option value="3000以上">3000以上</option>
+                                    <option value="6000以上">6000以上</option>
+                                    <option value="10000以上">10000以上</option>
+                                    <option value="15000以上">15000以上</option>
+                                    <option value="20000以上">20000以上</option>
+                                </select>
+                            </div>
+                            <div class="info_ex_mail">
+                                <div>邮箱（选填）</div>
+                                <input type="text" name="email">
+                            </div>
+                            <div class="info_ex_wechat">
+                                <div>微信号（选填）</div>
+                                <input type="text" name="wechat">
+                            </div>
+                            <div class="info_ex_btn">
+                                <button class="info_btn_no">取消</button>
+                                <button class="info_btn_yes">完成</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="mid_adv">
+                    <div class="adv_title">个人优势</div>
+
+                    <div class="adv_cont">
+                        <ul>
+                        </ul>
+                        <div class="adv_change">
+                            <span> </span>编辑
+                        </div>
+
+                    </div>
+
+                    <div class="mid_adv_ex">
+
+                        <div class="adv_ex_list">
+
+                            <div class="selected_tags_container">
+                                <div class="selected_tags_title">已选标签</div>
+                                <ul class="selected_tags_list">
+                                </ul>
+                            </div>
+
+
+
+                            <!-- 添加自定义优势 -->
+                            <div class="adv_custom">
+                                <input type="text" class="custom_input" placeholder="输入自定义优势">
+                                <button class="custom_btn">确定</button>
+                            </div>
+
+
+                            <!-- 前端开发 -->
+                            <div class="adv_category">
+                                <div class="adv_category_title">前端开发</div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                    <li>Vue.js</li>
+                                    <li>Angular</li>
+                                    <li>Bootstrap</li>
+                                    <li>Sass/Less</li>
+                                    <li>jQuery</li>
+                                </ul>
+                            </div>
+                            <!-- 后端开发 -->
+                            <div class="adv_category">
+                                <div class="adv_category_title">后端开发</div>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>Python</li>
+                                    <li>Django</li>
+                                    <li>Flask</li>
+                                    <li>Java</li>
+                                    <li>Spring Boot</li>
+                                    <li>C#</li>
+                                </ul>
+                            </div>
+                            <!-- 数据库管理 -->
+                            <div class="adv_category">
+                                <div class="adv_category_title">数据库管理</div>
+                                <ul>
+                                    <li>MySQL</li>
+                                    <li>MongoDB</li>
+                                    <li>PostgreSQL</li>
+                                    <li>SQLite</li>
+                                    <li>Redis</li>
+                                    <li>Oracle</li>
+                                    <li>SQL Server</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
+                            <!-- 机器学习与人工智能 -->
+                            <div class="adv_category">
+                                <div class="adv_category_title">机器学习与人工智能</div>
+                                <ul>
+                                    <li>机器学习</li>
+                                    <li>深度学习</li>
+                                    <li>数据挖掘</li>
+                                    <li>自然语言处理</li>
+                                    <li>数据可视化</li>
+                                    <li>人工智能</li>
+                                    <li>大数据</li>
+                                    <li>数据分析</li>
+                                    <li>统计学</li>
+                                </ul>
+                            </div>
+                            <!-- 网络与系统管理 -->
+                            <div class="adv_category">
+                                <div class="adv_category_title">网络与系统管理</div>
+                                <ul>
+                                    <li>网络安全</li>
+                                    <li>系统管理</li>
+                                    <li>网络架构</li>
+                                    <li>云计算</li>
+                                    <li>虚拟化</li>
+                                    <li>容器化</li>
+                                    <li>网络协议</li>
+                                    <li>路由器配置</li>
+                                    <li>防火墙配置</li>
+                                </ul>
+                            </div>
+
+                            <div class="adv_ex_btn">
+                                <button class="adv_btn_no">取消</button>
+                                <button class="adv_btn_yes">完成</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mid_wish">
+
+                    <div class="wish_title">期望职位</div>
+
+                    <div class="wish_cont">
+                        <ul>
+                        </ul>
+                        <div class="wish_change">
+                            <span> </span>编辑
+                        </div>
+                    </div>
+
+                    <div class="mid_wish_ex">
+                        <div class="wish_ex_list">
+
+                            <div class="selected_wish_container">
+                                <div class="selected_wish_title">已选标签</div>
+                                <ul class="selected_wish_list">
+                                </ul>
+                            </div>
+
+                            <!-- 添加自定义期望职位 -->
+                            <div class="wish_custom">
+                                <input type="text" class="wish_custom_input" placeholder="输入自定义期望职位">
+                                <button class="wish_custom_btn">确定</button>
+                            </div>
+
+
+                            <!-- 计算机与技术职位 -->
+                            <div class="wish_category">
+                                <div class="wish_category_title">计算机与技术职位</div>
+                                <ul>
+                                    <li>软件工程师</li>
+                                    <li>前端工程师</li>
+                                    <li>后端工程师</li>
+                                    <li>全栈工程师</li>
+                                    <li>移动应用开发工程师</li>
+                                    <li>数据工程师</li>
+                                    <li>网络工程师</li>
+                                    <li>安全工程师</li>
+                                    <li>数据库工程师</li>
+                                    <li>测试工程师</li>
+                                    <li>人工智能工程师</li>
+                                    <li>机器学习工程师</li>
+                                    <li>系统管理员</li>
+                                    <li>DevOps工程师</li>
+                                    <li>游戏开发工程师</li>
+                                    <!-- 其他计算机与技术相关职位继续添加在此处 -->
+                                </ul>
+                            </div>
+
+                            <!-- 数据科学与人工智能职位 -->
+                            <div class="wish_category">
+                                <div class="wish_category_title">数据科学与人工智能职位</div>
+                                <ul>
+                                    <li>数据科学家</li>
+                                    <li>数据分析师</li>
+                                    <li>数据挖掘工程师</li>
+                                    <li>机器学习工程师</li>
+                                    <li>自然语言处理工程师</li>
+                                    <li>计算机视觉工程师</li>
+                                    <li>智能系统工程师</li>
+                                    <li>模式识别工程师</li>
+                                    <!-- 其他数据科学与人工智能相关职位继续添加在此处 -->
+                                </ul>
+                            </div>
+
+                            <div class="wish_ex_btn">
+                                <button class="wish_btn_no">取消</button>
+                                <button class="wish_btn_yes">完成</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mid_exp">
+                    <div class="exp_title">工作/实习经历</div>
+
+                    <div class="exp_cont">
+                        <ul id="expList">
+                            <li>
+                                <div class="exp_cont1">
+                                    <div class="exp_name">1新东方教育科技集团有限公司</div>
+                                    <div class="exp_job">Java</div>
+                                    <div class="exp_state">实习</div>
+                                </div>
+                                <div class="exp_time">2024.01-2024.03</div>
+                                <div class="exp_cont2">
+                                    <div class="exp_work_name">工作内容：</div>
+                                    <div class="exp_work_cont">后端开发</div>
+                                </div>
+                                <div class="exp_cont3">
+                                    <div class="exp_grade_name">工作业绩：</div>
+                                    <div class="exp_grade_cont">优秀员工</div>
+                                </div>
+                                <div class="exp_cont4"></div>
+                            </li>
+                        </ul>
+
+                        <div class="exp_change">
+                            <span> </span>编辑
+                        </div>
+
+                    </div>
+
+                    <div class="mid_exp_ex">
+                        <div class="exp_ex_title">添加工作/实习经历</div>
+                        <div class="exp_ex_cont">
+
+                            <ul>
+                                <li class="exp_ex_name">
+                                    <p>公司名称</p>
+                                    <input type="text">
+                                </li>
+                                <li class="exp_ex_job">
+                                    <p>工作职位</p>
+                                    <input type="text">
+                                </li>
+                                <li class="exp_ex_time">
+                                    <p>任职时间</p>
+                                    <input type="month">
+                                    <span>至</span>
+                                    <input type="month">
+                                </li>
+                                <li class="exp_ex_state">
+                                    <p>在职or实习</p>
+                                    <button type="button" class="exp_state_btn exp_yes">在职</button>
+                                    <button type="button" class="exp_state_btn exp_no">实习</button>
+                                </li>
+                            </ul>
+                            <div class="exp_ex_work">
+                                <p>工作内容</p>
+                                <div class="exp_ex_work_top">
+                                    <div class="work_top_no"></div>
+                                    <div class="work_top_yes"></div>
+                                </div>
+                                <div class="exp_ex_work_main">
+                                    <textarea wrap="soft" autocomplete="on" spellcheck="false" placeholder="1、主要负责新员工入职培训；
+2、分析制定员工每月个人销售业绩；
+3、帮助员工提高每日客单价，整体店面管理等工作。" rows="8"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="exp_ex_grade">
+                                <p>工作业绩（选填）</p>
+                                <div class="exp_ex_grade_top">
+                                    <div class="grade_top_no"></div>
+                                    <div class="grade_top_yes"></div>
+                                </div>
+                                <div class="exp_ex_grade_main">
+                                    <textarea wrap="soft" autocomplete="on" spellcheck="false" placeholder="填写完整、有吸引力的工作业绩，有助于您更多地吸引Boss的关注
+例如：
+1、取得的成绩...
+2、实现的突破...
+3、获得的表彰..." rows="8"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="exp_ex_btn">
+                            <div class="exp_btn_no">取消</div>
+                            <div class="exp_btn_yes">完成</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mid_proj">
+                    <div class="proj_title">项目经历</div>
+
+                    <div class="proj_cont">
+                        <ul id="projList">
+                            <li>
+                                <div class="proj_cont1">
+                                    <div class="exp_name">大学生创业大赛1</div>
+                                    <div class="exp_job">前端开发</div>
+                                </div>
+                                <div class="proj_time">2024.01-2024.03</div>
+                                <div class="proj_link">www.www.www</div>
+                                <div class="proj_cont2">
+                                    <div class="proj_work_name">项目内容：</div>
+                                    <div class="proj_work_cont">微信小程序开发</div>
+                                </div>
+                                <div class="exp_cont3">
+                                    <div class="proj_grade_name">项目成绩：</div>
+                                    <div class="proj_grade_cont">国际一等奖</div>
+                                </div>
+                                <div class="proj_cont4"></div>
+                            </li>
+                        </ul>
+                        <div class="proj_change">
+                            <span> </span>编辑
+                        </div>
+
+                    </div>
+
+                    <div class="mid_proj_ex">
+                        <div class="proj_ex_title">添加项目经历</div>
+                        <div class="proj_ex_cont">
+
+                            <ul>
+                                <li class="proj_ex_name">
+                                    <p>项目名称</p>
+                                    <input type="text">
+                                </li>
+                                <li class="proj_ex_job">
+                                    <p>担任工作</p>
+                                    <input type="text">
+                                </li>
+                                <li class="proj_ex_time">
+                                    <p>项目时间</p>
+                                    <input type="month" class="proj_start_time">
+                                    <span>至</span>
+                                    <input type="month" class="proj_end_time">
+                                </li>
+                                <li class="proj_ex_link">
+                                    <p>项目链接（选填）</p>
+                                    <input type="text">
+                                </li>
+                            </ul>
+
+                            <div class="proj_ex_work">
+                                <p>项目内容</p>
+                                <div class="proj_ex_work_top">
+                                    <div class="proj_work_top_no"></div>
+                                    <div class="proj_work_top_yes"></div>
+                                </div>
+                                <div class="proj_ex_work_main">
+                                    <textarea wrap="soft" autocomplete="on" spellcheck="false" placeholder="描述该项目，向招聘者展示您的项目经验
+例如：
+1、项目概述…
+2、人员分工…
+3、我的分工…" rows="8"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="proj_ex_grade">
+                                <p>项目成绩（选填）</p>
+                                <div class="proj_ex_grade_top">
+                                    <div class="proj_grade_top_no"></div>
+                                    <div class="proj_grade_top_yes"></div>
+                                </div>
+                                <div class="proj_ex_grade_main">
+                                    <textarea wrap="soft" autocomplete="on" spellcheck="false" placeholder="请填写内容"
+                                        rows="8"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="proj_ex_btn">
+                            <div class="proj_btn_no">取消</div>
+                            <div class="proj_btn_yes">完成</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mid_edu">
+                    <div class="edu_title">教育经历</div>
+
+                    <div class="edu_cont">
+                        <ul id="eduList">
+                            <li>
+                                <div class="edu_cont1">
+                                    <div class="edu_name">电子科技大学</div>
+                                    <div class="edu_state">本科</div>
+                                </div>
+                                <div class="edu_job">软件工程</div>
+                                <div class="edu_time">2024.01-2024.03</div>
+                                <div class="edu_cont2">
+                                    <div class="edu_work_name">在校经历：</div>
+                                    <div class="edu_work_cont">获奖学金</div>
+                                </div>
+                                <div class="edu_cont4"></div>
+                            </li>
+                        </ul>
+                        <div class="edu_change">
+                            <span> </span>编辑
+                        </div>
+
+                    </div>
+
+                    <div class="mid_edu_ex">
+                        <div class="edu_ex_title">添加教育经历</div>
+                        <div class="edu_ex_cont">
+
+                            <ul>
+                                <li class="edu_ex_name">
+                                    <p>学校名称</p>
+                                    <input type="text">
+                                </li>
+                                <li class="edu_ex_state">
+                                    <p>学历</p>
+                                    <input type="text">
+                                </li>
+                                <li class="edu_ex_job">
+                                    <p>专业</p>
+                                    <input type="text">
+                                </li>
+                                <li class="edu_ex_time">
+                                    <p>教育时间</p>
+                                    <input type="month" class="edu_start_time">
+                                    <span>至</span>
+                                    <input type="month" class="edu_end_time">
+                                </li>
+                            </ul>
+
+                            <div class="edu_ex_work">
+                                <p>在校经历（选填）</p>
+                                <div class="edu_ex_work_top">
+                                    <div class="edu_work_top_no"></div>
+                                    <div class="edu_work_top_yes"></div>
+                                </div>
+                                <div class="edu_ex_work_main">
+                                    <textarea wrap="soft" autocomplete="on" spellcheck="false" placeholder="1、在校担任职务…
+2、获得荣誉…
+3、所学主要课程…" rows="8"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="edu_ex_btn">
+                            <div class="edu_btn_no">取消</div>
+                            <div class="edu_btn_yes">完成</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mid_my"></div>
+            </div>
+
+            <div class="right">
+                <div class="right_look" id="lookBtn">预览现有简历</div>
+                <div class="right_upload" id="uploadBtn">点击上传简历</div>
+
+                <div class="look">
+                    <div class="look_top">
+                        <div class="look_img">
+                            <img src="https://img.bosszhipin.com/boss/avatar/avatar_13.png" alt="">
+                        </div>
+                        <div class="look_info">
+                            <div class="look_name">张鹏程</div>
+                            <div class="look_tag">
+                                <ul>
+                                    <li>男</li>
+                                    <li>22岁</li>
+                                    <li>本科</li>
+                                    <li>在校-考虑机会</li>
+                                    <li>13833141821</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="look_adv">
+                        <div class="look_adv_left">
+                            <p>个人优势</p>
+                        </div>
+                        <div class="look_adv_right">
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="look_wish">
+                        <div class="look_wish_left">
+                            <p>期望职位</p>
+                        </div>
+                        <div class="look_wish_right">
+                            <ul>
+                                <li>Java</li>
+                                <li>后端工程师</li>
+                                <li>软件测试师</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="look_exp">
+                        <div class="look_exp_left">
+                            <p>工作/实习经历</p>
+                        </div>
+                        <div class="look_exp_right">
+                            <ul>
+                                <li>
+                                    <div class="look_exp_comp">新东方技术有限公司</div>
+                                    <div class="look_exp_line"></div>
+                                    <div class="look_exp_job">Java</div>
+                                </li>
+                                <li>
+                                    <div class="look_exp_comp">新东方技术有限公司</div>
+                                    <div class="look_exp_line"></div>
+                                    <div class="look_exp_job">Java</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="look_proj">
+                        <div class="look_proj_left">
+                            <p>项目经历</p>
+                        </div>
+                        <div class="look_proj_right">
+                            <ul>
+                                <li>
+                                    <div class="look_proj_name">大学生傻傻大赛</div>
+                                    <div class="look_proj_line"></div>
+                                    <div class="look_proj_job">前端开发</div>
+                                </li>
+                                <li>
+                                    <div class="look_proj_name">大学生傻傻大赛2</div>
+                                    <div class="look_proj_line"></div>
+                                    <div class="look_proj_job">前端开发2</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="look_edu">
+                        <div class="look_edu_left">
+                            <p>教育经历</p>
+                        </div>
+                        <div class="look_edu_right">
+                            <ul>
+                                <li>
+                                    <div class="look_edu_img">
+                                        <img src="https://img.bosszhipin.com/beijin/reminder/94b0f5b4162f56f8df1e8be013ba3f15b1792042df7d374e83c5b195df57be512945e9f2ac57405fb92cb1610b027dcd.png"
+                                            alt="">
+                                    </div>
+                                    <div class="look_edu_info">
+                                        <div class="look_edu_name">电子科技大学</div>
+                                        <div class="look_edu_job">
+                                            <h4>软件工程</h4>
+                                            <span></span>
+                                            <h4>本科</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="look_edu_img">
+                                        <img src="https://img.bosszhipin.com/beijin/reminder/94b0f5b4162f56f8df1e8be013ba3f15b1792042df7d374e83c5b195df57be512945e9f2ac57405fb92cb1610b027dcd.png"
+                                            alt="">
+                                    </div>
+                                    <div class="look_edu_info">
+                                        <div class="look_edu_name">电子科技大学</div>
+                                        <div class="look_edu_job">
+                                            <h4>软件工程</h4>
+                                            <span></span>
+                                            <h4>本科</h4>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="look_close"></div>
+                </div>
+
+                <div class="overlay_look" id="overlayLook"></div>
+
+
+                <div class="upload">
+                    <div class="upload_title">导入简历</div>
+                    <div class="upload_close"></div>
+                    <div class="upload_main" id="uploadMain">
+                        <div class="upload_ico"></div>
+                        <h4>拖拽文件到这里/或者点击上传文件</h4>
+                        <p>简历建议使用PDF，也支持其他常见格式</p>
+                        <p>文件大小不得超过xxM</p>
+                    </div>
+                </div>
+
+                <div class="overlay_upload" id="overlayUpload"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="js/resu.js"></script>
+</body>
+
+</html>
