@@ -1,5 +1,6 @@
 # Frontend
 #### login  >  登陆页
+#### register  >  登陆页
 ### 个人端
 #### myindex  >  首页
 #### reco  >  职位推荐页
