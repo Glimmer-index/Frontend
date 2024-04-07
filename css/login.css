@@ -1,0 +1,510 @@
+a,
+b,
+body,
+button,
+dd,
+div,
+dl,
+em,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+input,
+label,
+li,
+nav,
+p,
+select,
+span,
+td,
+textarea,
+u,
+ul {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none
+}
+
+li,
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:active,
+a:focus,
+a:hover,
+button,
+input,
+textarea {
+    outline: 0
+}
+
+a:hover {
+    text-decoration: none;
+    -webkit-transition: all linear .2s;
+    transition: all linear .2s
+}
+
+img {
+    border: none
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?8mntfy');
+    src: url('../fonts/icomoon.eot?8mntfy#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?8mntfy') format('truetype'),
+        url('../fonts/icomoon.woff?8mntfy') format('woff'),
+        url('../fonts/icomoon.svg?8mntfy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vh;
+    background: #4c64ec url(https://img.bosszhipin.com/static/file/2022/zlqc2m9fao1667185843533.png) bottom / 100% auto no-repeat;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 728px;
+    height: 580px;
+    margin-left: -364px;
+    margin-top: -290px;
+    background: #fff;
+    box-shadow: 0 6px 13px 0 rgba(0, 0, 0, .1);
+    border-radius: 28px;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+    width: 240px;
+    height: 100%;
+    background: linear-gradient(214deg, #dffbff, #faf6f3);
+    border-radius: 28px 0 0 28px;
+    padding-left: 32px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 42px;
+    margin-top: 68px;
+}
+
+.logo_img {
+    float: left;
+    width: 44px;
+    height: 42px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.logo_img img {
+    height: 42px;
+}
+
+.logo strong {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgb(86, 152, 196);
+}
+
+.logo p {
+    font-size: 14px;
+    color: rgb(86, 152, 196);
+    line-height: 20px;
+    margin-top: 2px;
+}
+
+.jober,
+.boss {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    position: absolute;
+    width: 100%;
+}
+
+.jober.active,
+.boss.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.jober li,
+.boss li {
+    margin-top: 50px;
+}
+
+.jober i,
+.boss i {
+    float: left;
+    width: 42px;
+    height: 42px;
+    background: url(https://img.bosszhipin.com/static/file/2022/5j2r4fg3uy1666342531695.png) no-repeat;
+    background-size: 42px auto;
+}
+
+.jober .jober_i1 {
+    background-position: 0 0;
+}
+
+.jober .jober_i2 {
+    background-position: 0 -42px;
+}
+
+.boss .boss_i1 {
+    background-position: 0 -84px;
+}
+
+.boss .boss_i2 {
+    background-position: 0 -126px;
+}
+
+.boss .boss_i3 {
+    background-position: 0 -168px;
+}
+
+.jober strong,
+.boss strong {
+    display: block;
+    margin-top: 2px;
+    margin-left: 53px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: #666;
+    line-height: 20px;
+}
+
+.jober p,
+.boss p {
+    display: block;
+    margin-left: 53px;
+    margin-top: 2px;
+    font-size: 13px;
+    color: #999;
+    line-height: 18px;
+}
+
+.right {
+    float: left;
+    position: relative;
+    width: 488px;
+    padding: 48px 0;
+}
+
+.QRcode {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: no-repeat;
+    cursor: pointer;
+    background: url(https://img.bosszhipin.com/static/file/2022/4dwjcdpfje1667186848239.png) 0 0 / 40px auto no-repeat;
+}
+
+.QRtip {
+    position: absolute;
+    left: 60px;
+    top: 4px;
+    padding: 0 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #666;
+    line-height: 32px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 6px 13px 0 rgba(0, 0, 0, .1);
+    white-space: nowrap;
+}
+
+.QRtip::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    z-index: -1;
+    box-shadow: 0 6px 13px 0 rgba(0, 0, 0, .1);
+}
+
+.QRcode:hover {
+    background-position: 0 -40px;
+}
+
+.right_main {
+    position: relative;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #222;
+    line-height: 30px;
+    text-align: center;
+}
+
+.sub_title {
+    display: block;
+    color: #999;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.choice {
+    margin-top: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 4px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.choice li {
+    float: left;
+    width: 50%;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.choice li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-out;
+    z-index: -1;
+}
+
+.choice li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.choice .active {
+    color: #0056b3;
+    font-weight: 700;
+}
+
+.choice .active:before {
+    transform: scaleX(1);
+    transform-origin: bottom middle;
+}
+
+
+.user_name {
+    margin-top: 30px;
+    position: relative;
+    border: 1px solid #d0d2d9;
+    height: 48px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    padding: 0 20px;
+}
+
+.user_name:hover {
+    border-color: #2575fc;
+}
+
+.user_name input {
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 46px;
+    height: 46px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.password {
+    position: relative;
+    border: 1px solid #d0d2d9;
+    height: 48px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.password:hover {
+    border-color: #2575fc;
+}
+
+.password input {
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 46px;
+    height: 46px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.input_btn {
+    margin-top: 30px;
+}
+
+.input_btn button {
+    display: block;
+    width: 100%;
+    background-color: #1E9600;
+    border-radius: 20px;
+    line-height: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 0;
+    transition: all .3s ease;
+    background-clip: padding-box;
+}
+
+.input_btn button:hover {
+    background-color: #FFF;
+    color: #1E9600;
+    background-size: 100%;
+    border-radius: 0px;
+    border: 2px solid #1E9600;
+}
+
+.wechat {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    font-size: 12px;
+    color: #666;
+    line-height: 17px;
+    transition: all .2s linear;
+    align-items: center;
+}
+
+.wechat span {
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 100%;
+    background: rgba(90, 204, 130, .21);
+    color: #50b674;
+    font-family: 'icomoon';
+}
+
+.sure {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    line-height: 17px;
+    text-align: center;
+}
+
+.sure input {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    margin-right: 6px;
+    top: -1px;
+    border-radius: 2px;
+    border: 1px solid #848899;
+    transition: all .2s linear;
+    box-sizing: border-box;
+
+}
+
+.sure input[type="checkbox"]:hover {
+    transform: scale(1.2);
+    border-color: #28a745;
+}
+
+.sure input[type="checkbox"]:checked {
+    background: linear-gradient(135deg, #28a745, #85e085);
+    border-color: #28a745;
+}
+
+.toRegister {
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+    display: inline-block;
+    padding: 3px 6px;
+    font-size: 13px;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s, transform 0.3s;
+    border: 2px solid transparent;
+}
+
+.toRegister:before {
+    content: "\1F468";
+    font-size: 15px;
+    margin-right: 1px;
+}
+
+.toRegister:hover {
+    font-weight: 700;
+    border-color: #0056b3;
+    transform: scale(1.05);
+}
